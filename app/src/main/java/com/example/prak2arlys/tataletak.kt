@@ -1,7 +1,5 @@
 package com.example.prak2arlys
 
-
-
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -107,3 +105,13 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 Text(text = "Col1 Row2 Komponen3")
             }
         }
+
+        Spacer(modifier = Modifier.height(10.dp))
+
+        Box(
+            modifier = modifier
+                .fillMaxWidth()
+                .height(300.dp)
+                .background(color = Color.Cyan),
+            contentAlignment = Alignment.Center
+        )
