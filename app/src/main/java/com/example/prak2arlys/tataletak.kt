@@ -90,4 +90,28 @@ fun LatihanColumn() {
         Kotak("C", Color.Blue)
     }
 }
+
+// 2. Row: tersusun ke samping
+@Composable
+fun LatihanRow() {
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Kotak("A", Color.Red)
+        Kotak("B", Color(0xFF2E7D32))
+        Kotak("C", Color.Blue)
+    }
+}
+
+// 3. Box: saling menumpuk di area yang sama
+@Composable
+fun LatihanBox() {
+    Box(
+        modifier = Modifier
+            .size(150.dp)
+            .background(Color.LightGray),
+        contentAlignment = Alignment.Center
+    ) {
+        Kotak("A", Color.Red, 150.dp)
+        Kotak("B", Color(0xFF2E7D32), 100.dp)
+        Kotak("C", Color.Blue, 50.dp)
+    }
 }
