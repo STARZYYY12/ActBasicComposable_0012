@@ -78,4 +78,16 @@ private fun Kotak(teks: String, warna: Color, ukuran: Dp = 60.dp) {
         Text(text = teks, color = Color.White, fontWeight = FontWeight.Bold)
     }
 }
+
+// ---------- Latihan ----------
+
+// 1. Column: tersusun ke bawah
+@Composable
+fun LatihanColumn() {
+    Column {
+        Kotak("A", Color.Red)
+        Kotak("B", Color(0xFF2E7D32))
+        Kotak("C", Color.Blue)
+    }
+}
 }
