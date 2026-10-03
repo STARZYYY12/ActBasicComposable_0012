@@ -115,3 +115,37 @@ fun LatihanBox() {
         Kotak("C", Color.Blue, 50.dp)
     }
 }
+
+// 4. Column berisi Row: dua baris, tiap baris berisi kotak ke samping
+@Composable
+fun LatihanColumnRow() {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("Baris pertama")
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Kotak("A", Color.Red)
+            Kotak("B", Color(0xFF2E7D32))
+        }
+        Text("Baris kedua")
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Kotak("C", Color.Blue)
+            Kotak("D", Color(0xFFFF9800))
+        }
+    }
+}
+
+// 5. Row berisi Column: dua kolom berdampingan, tiap kolom berisi kotak ke bawah
+@Composable
+fun LatihanRowColumn() {
+    Row(horizontalArrangement = Arrangement.spacedBy(16.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text("Kolom 1")
+            Kotak("A", Color.Red)
+            Kotak("B", Color(0xFF2E7D32))
+        }
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Text("Kolom 2")
+            Kotak("C", Color.Blue)
+            Kotak("D", Color(0xFFFF9800))
+        }
+    }
+}
