@@ -91,3 +91,20 @@ fun Tugas() {
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold
             )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Foto bulat dengan bingkai putih
+            Image(
+                painter = painterResource(id = R.drawable.img),
+                contentDescription = "Foto Profil",
+                modifier = Modifier
+                    .size(300.dp)
+                    .clip(CircleShape)
+                    .border(4.dp, Color.White, CircleShape)
+                    .background(Color(0xFFE8E8F5)),
+                contentScale = ContentScale.Fit
+            )
+        }
+    }
+}
