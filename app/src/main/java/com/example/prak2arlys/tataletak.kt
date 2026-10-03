@@ -65,4 +65,17 @@ private fun Judul(teks: String) {
         modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
     )
 }
+
+// Kotak berwarna berisi huruf, dipakai berulang di semua latihan
+@Composable
+private fun Kotak(teks: String, warna: Color, ukuran: Dp = 60.dp) {
+    Box(
+        modifier = Modifier
+            .size(ukuran)
+            .background(warna),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(text = teks, color = Color.White, fontWeight = FontWeight.Bold)
+    }
+}
 }
