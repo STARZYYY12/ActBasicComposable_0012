@@ -45,4 +45,35 @@ fun Tugas() {
                 .fillMaxSize()
                 .padding(top = 40.dp, bottom = 40.dp),
             horizontalAlignment = Alignment.CenterHorizontally
-        ) }
+        ) {
+
+            Text(
+                text = "Login",
+                color = Color.Blue,
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "Ini adalah halaman login,",
+                color = Color.White,
+                fontSize = 16.sp
+            )
+
+            Spacer(modifier = Modifier.height(50.dp))
+
+            // Logo kampus
+            Image(
+                painter = painterResource(id = R.drawable.img_1),
+                contentDescription = "Logo",
+                modifier = Modifier.size(150.dp)
+            )
+
+            Spacer(modifier = Modifier.height(50.dp))
+
+            Text(
+                text = "Nama",
+                color = Color.Red,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
