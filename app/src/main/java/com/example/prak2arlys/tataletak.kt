@@ -33,4 +33,24 @@ fun TataLetak() {
             .statusBarsPadding()
             .verticalScroll(rememberScrollState())
             .padding(16.dp)
-    ) }
+    ) {
+        Judul("1. Column")
+        LatihanColumn()
+
+        Judul("2. Row")
+        LatihanRow()
+
+        Judul("3. Box")
+        LatihanBox()
+
+        Judul("4. Column + Row")
+        LatihanColumnRow()
+
+        Judul("5. Row + Column")
+        LatihanRowColumn()
+
+        Judul("6. Box + Column + Row")
+        LatihanBoxColumnRow()
+    }
+}
+}
