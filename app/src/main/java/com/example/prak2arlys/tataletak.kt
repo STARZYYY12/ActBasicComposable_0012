@@ -149,3 +149,41 @@ fun LatihanRowColumn() {
         }
     }
 }
+
+// 6. Box berisi Column berisi Row, plus teks di pojok
+@Composable
+fun LatihanBoxColumnRow() {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(220.dp)
+            .background(Color.LightGray)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            Text("Ini Column di dalam Box", fontWeight = FontWeight.Bold)
+            Row(
+                modifier = Modifier.padding(top = 12.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                Kotak("A", Color.Red)
+                Kotak("B", Color(0xFF2E7D32))
+                Kotak("C", Color.Blue)
+            }
+        }
+
+        Text(
+            text = "Pojok",
+            color = Color.Red,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(8.dp)
+        )
+    }
+}
