@@ -77,3 +77,17 @@ fun Tugas() {
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold
             )
+
+            Text(
+                text = "FAIZ RIZKY KURNIAWAN",
+                color = Color.Blue,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+
+            Text(
+                text = "20240140012",
+                color = Color.Black,
+                fontSize = 24.sp,
+                fontWeight = FontWeight.Bold
+            )
