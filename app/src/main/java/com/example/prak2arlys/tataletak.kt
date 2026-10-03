@@ -53,4 +53,16 @@ fun TataLetak() {
         LatihanBoxColumnRow()
     }
 }
+
+// ---------- Komponen bantu ----------
+
+@Composable
+private fun Judul(teks: String) {
+    Text(
+        text = teks,
+        fontSize = 18.sp,
+        fontWeight = FontWeight.Bold,
+        modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
+    )
+}
 }
